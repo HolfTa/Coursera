@@ -1,15 +1,54 @@
+/* Styling margin, padding and box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Styling for general elements */
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Styling for h1 */
+/* Container should contain all three columns with some padding and max with */
+.columns_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for h1*/
 h1 {
     text-align: center;
     font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Styling for column */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    position: relative;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Styling for text, should not overlap titles */
+.column p {
+    margin-top: 50px;
+    padding: 10px;
 }
 
 /* Styling for elements with column_title class */
 .column_title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border: 1px solid #000;
     font-weight:  bold;
 }
+
