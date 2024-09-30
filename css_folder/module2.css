@@ -12,7 +12,7 @@ body {
 
 /* Container should contain all three columns with some padding and max with */
 .columns_container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -22,22 +22,26 @@ body {
 h1 {
     text-align: center;
     font-weight: bold;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 /* Styling for column */
 .column {
     float: left;
-    width: 33.33%;
-    padding: 10px;
+    width: 30%;
+    padding: 20px;
+    margin: 0 10px;
+    margin-left: 35px;
     position: relative;
     background-color: #ccc;
     margin-bottom: 20px;
+    border: 1px solid black;
 }
 
 /* Styling for text, should not overlap titles */
 .column p {
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 10px;
 }
 
