@@ -31,6 +31,7 @@ h1 {
 .column {
     float: left;
     width: 30%;
+    min-height: 300px;
     padding: 10px;
     position: relative;
     background-color: #ccc;
@@ -53,6 +54,16 @@ h1 {
     padding: 5px 10px;
     border: 1px solid #000;
     font-weight:  bold;
+}
+
+/* Darken second column title by 10% */
+.columns_container .column:nth-child(2) .column_title {
+    background-color: #d9d9d9;
+}
+
+/* Darken third column title by 20% */
+.columns_container .column:nth-child(3) .column_title {
+    background-color: #bfbfbf;
 }
 
 /* Mediaqueries for medium devices */
