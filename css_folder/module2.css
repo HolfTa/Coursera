@@ -13,9 +13,10 @@ body {
 /* Container should contain all three columns with some padding and max with */
 .columns_container {
     max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0;
+    padding: 30px;
     text-align: center;
+    overflow: hidden;
 }
 
 /* Styling for h1*/
@@ -26,13 +27,11 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Styling for column */
+/* Styling for column -default, large device- */
 .column {
     float: left;
     width: 30%;
-    padding: 20px;
-    margin: 0 10px;
-    margin-left: 35px;
+    padding: 10px;
     position: relative;
     background-color: #ccc;
     margin-bottom: 20px;
@@ -56,3 +55,25 @@ h1 {
     font-weight:  bold;
 }
 
+/* Mediaqueries for medium devices */
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    .column {
+        float: left;
+        width: 45%;
+        margin: 1%;
+    }
+    /* Third column will take the entire row */
+    .columns_container .column:nth-child(3) {
+        width: 100%;
+        margin: 1%;
+    }
+}
+
+/* Media queries for small devices (below 768px) */
+@media only screen and (max-width: 767px) {
+    .column {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+}
