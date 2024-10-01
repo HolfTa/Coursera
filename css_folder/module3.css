@@ -9,3 +9,18 @@ body {
     font-weight: 500;
     font-style: normal;
   }
+
+/* Header styling */
+#header-nav {
+    background-color: #706642;
+    border-radius: 0;
+    border: 0;
+}
+
+/* Logo image */
+#logo-img {
+    background: url('../images/Holfta_logo.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0px;
+}
