@@ -84,14 +84,37 @@ body {
 .heading-container {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 30px;
     margin: 0;
 }
 
 .page-heading {
     font-size: 24px;
     text-align: center;
-    margin-top: 1%;
+    margin-top: 10px;
     color: black;
     text-shadow: 1px 1px 1px gray;
+}
+
+/* Styling for tall section */
+.tall-section {
+    background-color: #896A4D;
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.tall-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tall-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
 }
