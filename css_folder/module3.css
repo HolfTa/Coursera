@@ -4,19 +4,12 @@ body {
     color: black;
 }
 
-/* Font styling form Google fonts */
-.playfair-display-font {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
 /* Header styling */
 #header-nav {
     background-color: #706642;
     border-radius: 0;
     border: 0;
+    position: static;
 }
 
 .navbar-header {
@@ -52,6 +45,7 @@ body {
 .navbar-brand h1 {
     color: black;
     text-shadow: 1px 1px 1px gray;
+    font-size: 5vw;
 }
 
 .navbar-brand a:hover, .navbar-brand a:focus {
@@ -60,8 +54,17 @@ body {
 
 /* Navbar toggle button */
 .navbar-toggle {
-    margin-top: 20px;
+    border: none;
+    background: none;
     margin-left: auto;
+}
+
+.icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: black;
+    margin: 4px auto;
 }
 
 /* Hide the logo on small screens */
@@ -76,4 +79,19 @@ body {
     .navbar-toggle {
         display: none;
     }
+}
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.page-heading {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 1%;
+    color: black;
+    text-shadow: 1px 1px 1px gray;
 }
