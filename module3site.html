@@ -18,17 +18,46 @@
   </head>
 
 <body>
-    <header>
-        <nav id="header-nav" class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <a href="module3site.html" class="pull-left visible-md visible-lg">
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Logo and title -->
+                <div class="d-flex align-items-center">
+                    <!-- Clickable logo, visible in medium and large screens -->
+                    <a href="module3site.html" class="d-none d-md-block">
                         <div id="logo-img"></div>
                     </a>
+
+                    <!-- Clickable title (always visible) -->
+                    <div class="navbar-brand">
+                        <a href="module3site.html">
+                            <h1>HolfTa's Process</h1>
+                        </a>
+                    </div>
                 </div>
+
+                <!-- Collapsible Navbar button, only visible on small screens -->
+                <button type="button" class="navbar-toggle collapsed d-md-none ml-auto" data-toggle="collapse" 
+                        data-target="#collapsable-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-        </nav>
-    </header>
+
+            <!-- Collapsible nav content -->
+            <div id="collapsable-nav" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="jquery-3.7.1.js"></script>
